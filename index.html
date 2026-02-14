@@ -9,29 +9,92 @@
   <link rel="canonical" href="https://panoramicroom.com/" />
 
   <style>
-    :root { --max: 860px; --fg:#111; --muted:#555; --bg:#fff; --card:#f6f7f9; --link:#0b57d0; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); line-height:1.55; }
-    header, main, footer { max-width: var(--max); margin: 0 auto; padding: 20px; }
+    :root {
+      --max: 860px;
+      --fg:#111;
+      --muted:#555;
+      --bg:#fff;
+      --card:#f6f7f9;
+      --link:#0b57d0;
+      --border:#e5e7eb;
+      --btn:#111;
+      --btnText:#fff;
+      --btnHover:#1f2937;
+    }
+
+    body {
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--fg);
+      background:var(--bg);
+      line-height:1.55;
+    }
+
+    header, main, footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 20px;
+    }
+
     header { padding-top: 34px; }
+
     h1 { font-size: 2rem; line-height:1.15; margin: 0 0 12px; }
     h2 { margin-top: 34px; scroll-margin-top: 14px; }
+
     .sub { color: var(--muted); margin: 0 0 18px; }
     .card { background: var(--card); padding: 16px; border-radius: 14px; }
+
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
+
     table { width:100%; border-collapse: collapse; margin-top: 12px; }
     th, td { text-align:left; padding: 10px; border-bottom: 1px solid #ddd; vertical-align: top; }
+
     ul { padding-left: 18px; }
+
     .kicker { font-size:.95rem; color:var(--muted); }
 
     /* Jump links / TOC */
     .toc { margin: 18px 0 0; }
-    .toc a { display:inline-block; margin: 6px 10px 0 0; padding: 8px 10px; background:#eef2ff; border-radius: 10px; }
+    .toc a {
+      display:inline-block;
+      margin: 6px 10px 0 0;
+      padding: 8px 10px;
+      background:#eef2ff;
+      border-radius: 10px;
+    }
+
+    /* CTA button */
+    .cta {
+      display:inline-block;
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: var(--btn);
+      color: var(--btnText);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .cta:hover {
+      background: var(--btnHover);
+      text-decoration: none;
+    }
+    .cta:focus-visible {
+      outline: 3px solid #93c5fd;
+      outline-offset: 3px;
+    }
 
     /* Explore section styling (aligned with rest of page) */
     .explore-list { display: grid; gap: 12px; margin-top: 12px; }
-    .explore-item { display:block; padding: 14px; border-radius: 14px; background: #fff; border: 1px solid #e5e7eb; }
-    .explore-title { font-weight: 700; margin-bottom: 4px; }
+    .explore-item {
+      display:block;
+      padding: 14px;
+      border-radius: 14px;
+      background: #fff;
+      border: 1px solid var(--border);
+    }
+    .explore-item:hover { text-decoration: none; border-color: #cbd5e1; }
+    .explore-title { font-weight: 700; margin-bottom: 4px; color: var(--fg); }
     .explore-desc { color: var(--muted); }
   </style>
 </head>
@@ -42,7 +105,6 @@
     <h1>Panoramic Room: What It Means, How It Differs, and How to Verify the View</h1>
     <p class="sub">A practical guide to the hotel meaning of “panoramic room” — plus the fastest way to confirm the actual view before you book.</p>
 
-    <!-- Optional: jump links (highly recommended) -->
     <nav class="toc" aria-label="Page sections">
       <a href="#what-is-a-panoramic-room">What it means</a>
       <a href="#why-its-confusing">Why it’s confusing</a>
@@ -56,7 +118,6 @@
   </header>
 
   <main>
-
     <section class="card" id="what-is-a-panoramic-room">
       <h2 style="margin-top:0;">What is a panoramic room?</h2>
       <p>A panoramic room is a hotel room promoted for a wide, expansive view of the surrounding scenery—city, ocean, harbour, mountains, landmarks—often enabled by large windows, corner layouts, or higher floors.</p>
@@ -121,11 +182,15 @@
       <h2 style="margin-top:0;">The best way to verify a panoramic room view</h2>
       <p>Marketing photos can be beautiful—but they don’t always show the real angle, obstructions, height, or how the view looks at night.</p>
       <p><strong>Best practice:</strong> check real guest-submitted photos of the specific room category.</p>
-      <p><a href="https://viewfromtheroom.com/" target="_blank" rel="noopener"><strong>See real panoramic room views on ViewFromTheRoom.com →</strong></a></p>
-      <a class="cta" href="https://viewfromtheroom.com/" rel="noopener">
-      See real panoramic room views on ViewFromTheRoom.com →
+
+      <!-- Button only (removed the duplicate text link above it) -->
+      <a class="cta" href="https://viewfromtheroom.com/" target="_blank" rel="noopener noreferrer">
+        See real panoramic room views on ViewFromTheRoom.com →
       </a>
-      <p class="sub" style="margin-top:10px;">ViewFromTheRoom is a UGC platform where travellers share the actual view from their hotel room—so you can “see the view before you book”.</p>
+
+      <p class="sub" style="margin-top:10px;">
+        ViewFromTheRoom is a UGC platform where travellers share the actual view from their hotel room—so you can “see the view before you book”.
+      </p>
     </section>
 
     <section id="faq">
@@ -175,13 +240,15 @@
         </a>
       </div>
     </section>
-
   </main>
 
   <footer>
     <p class="kicker"><strong>Last updated:</strong> 2026-02-06</p>
     <p class="kicker"><a href="#top">Back to top ↑</a></p>
-    <p class="kicker"><a href="https://viewfromtheroom.com/" target="_blank" rel="noopener">ViewFromTheRoom.com</a> — Real panoramic room views</p>
+    <p class="kicker">
+      <a href="https://viewfromtheroom.com/" target="_blank" rel="noopener noreferrer">ViewFromTheRoom.com</a>
+      — Real panoramic room views
+    </p>
   </footer>
 </body>
 </html>
