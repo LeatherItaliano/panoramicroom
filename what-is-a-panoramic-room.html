@@ -16,14 +16,8 @@
   <meta property="og:image" content="https://panoramicroom.com/og.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Preload hero image -->
-  <img
-  class="img"
-  src="/hotel-view-singapore-fairmont-hotel.jpg?v=2"
-  alt="Panoramic hotel room overlooking city skyline through floor-to-ceiling windows"
-  loading="eager"
-  fetchpriority="high"
-/>
+  <!-- Correct preload (NOT an <img> tag) -->
+  <link rel="preload" as="image" href="/hotel-view-singapore-fairmont-hotel.jpg" />
 
   <style>
     :root { --max: 860px; --fg:#111; --muted:#555; --bg:#fff; --card:#f6f7f9; --link:#0b57d0; }
@@ -51,6 +45,7 @@
     "@type":"Article",
     "headline":"What Is a Panoramic Room?",
     "description":"Definition, features and booking advice for panoramic hotel rooms.",
+    "image":"https://panoramicroom.com/hotel-view-singapore-fairmont-hotel.jpg",
     "author":{"@type":"Organization","name":"PanoramicRoom.com"},
     "publisher":{"@type":"Organization","name":"PanoramicRoom.com"},
     "mainEntityOfPage":{"@type":"WebPage","@id":"https://panoramicroom.com/what-is-a-panoramic-room.html"}
@@ -114,7 +109,6 @@
 <section>
   <h2>How it differs from standard and ocean view rooms</h2>
   <p>Panoramic describes view width and immersion. Ocean view simply confirms water visibility. A room can be panoramic without facing the ocean — for example, city skyline or mountain-facing rooms.</p>
-
   <p>Compare here: <a href="/panoramic-room-vs-ocean-view.html">Panoramic Room vs Ocean View Room</a></p>
 </section>
 
@@ -130,6 +124,7 @@
       width="1200"
       height="800"
       loading="lazy"
+      decoding="async"
     />
     <figcaption>Night skyline views are often a major selling point of panoramic rooms.</figcaption>
   </figure>
