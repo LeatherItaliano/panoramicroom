@@ -53,20 +53,21 @@
 
     /* Images */
     figure { margin: 0; }
+
+    /* ✅ HERO: consistent height so it doesn't look huge */
     .hero-figure { margin-top: 16px; }
-    .img {
+    .hero-img {
       width: 100%;
-      height: auto;
+      height: clamp(220px, 38vw, 360px);
+      object-fit: cover;
+      object-position: center;
       display: block;
       border-radius: 14px;
       border: 1px solid #e5e7eb;
       background: #fff;
     }
-    figcaption {
-      font-size: 0.95rem;
-      color: var(--muted);
-      margin-top: 8px;
-    }
+
+    /* ✅ GRID: consistent thumbnail sizing so images line up */
     .img-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -75,6 +76,23 @@
     }
     @media (min-width: 740px) {
       .img-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .thumb-img {
+      width: 100%;
+      aspect-ratio: 4 / 3; /* change to 16 / 9 if you prefer wider thumbs */
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+      background: #fff;
+    }
+
+    figcaption {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-top: 8px;
     }
 
     table { width:100%; border-collapse: collapse; margin-top: 12px; }
@@ -124,7 +142,7 @@
 
     <figure class="hero-figure">
       <img
-        class="img"
+        class="hero-img"
         src="/pano-city-hotel-view.jpg"
         alt="Panoramic city hotel room view with wide skyline outlook through large windows"
         loading="eager"
@@ -153,7 +171,7 @@
       <div class="img-grid" aria-label="Examples of popular hotel room views">
         <figure>
           <img
-            class="img"
+            class="thumb-img"
             src="/Oceanview-Room.jpg"
             alt="Ocean view hotel room with beach and water visible from the room"
             loading="lazy"
@@ -164,7 +182,7 @@
 
         <figure>
           <img
-            class="img"
+            class="thumb-img"
             src="/wynn-resort-corner-pano-city-view.jpg"
             alt="Corner panoramic hotel room with dual-window city skyline view"
             loading="lazy"
