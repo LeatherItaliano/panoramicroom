@@ -16,72 +16,49 @@
   <meta property="og:image" content="https://panoramicroom.com/og.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="/hotel-view-singapore-fairmont-hotel.jpg">
+
   <style>
     :root { --max: 860px; --fg:#111; --muted:#555; --bg:#fff; --card:#f6f7f9; --link:#0b57d0; }
     body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); line-height:1.6; }
     header, main, footer { max-width: var(--max); margin: 0 auto; padding: 20px; }
-    header { padding-top: 34px; }
     h1 { font-size: 2rem; margin-bottom: 12px; }
     h2 { margin-top: 34px; }
-    h3 { margin-top: 18px; }
     .sub { color: var(--muted); margin-bottom: 18px; }
     .card { background: var(--card); padding: 16px; border-radius: 14px; }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     ul { padding-left: 18px; }
     .kicker { font-size:.95rem; color:var(--muted); }
-
-    .img {
-      width:100%;
-      height:auto;
-      display:block;
-      border-radius:14px;
-      border:1px solid #e5e7eb;
-      margin-top:16px;
-    }
-
-    figcaption {
-      font-size:.95rem;
-      color:var(--muted);
-      margin-top:8px;
-    }
-
-    .btn {
-      display:inline-flex;
-      padding:12px 14px;
-      border-radius:12px;
-      background:#111;
-      color:#fff;
-      font-weight:700;
-      text-decoration:none;
-      margin-top:10px;
-    }
-
+    .img { width:100%; height:auto; display:block; border-radius:14px; border:1px solid #e5e7eb; margin-top:16px; }
+    figcaption { font-size:.95rem; color:var(--muted); margin-top:8px; }
     table { width:100%; border-collapse: collapse; margin-top: 14px; }
     th, td { padding: 10px; border-bottom:1px solid #ddd; text-align:left; }
+    .btn { display:inline-flex; padding:12px 14px; border-radius:12px; background:#111; color:#fff; font-weight:700; text-decoration:none; margin-top:10px; }
   </style>
 
-  <!-- FAQ Schema -->
+  <!-- Article Schema -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"What does panoramic room mean in a hotel?",
-        "acceptedAnswer":{"@type":"Answer","text":"A panoramic room is a hotel room marketed for its wide, immersive view. The room may be on a higher floor, positioned at a corner, or feature large or floor-to-ceiling windows to maximise visibility."}
-      },
-      {
-        "@type":"Question",
-        "name":"Is a panoramic room bigger than a standard room?",
-        "acceptedAnswer":{"@type":"Answer","text":"Not necessarily. Panoramic refers to the view, not the room size. Many panoramic rooms are similar in size to standard rooms but positioned to offer a better outlook."}
-      },
-      {
-        "@type":"Question",
-        "name":"Are panoramic rooms worth paying extra for?",
-        "acceptedAnswer":{"@type":"Answer","text":"They can be worth it if the view is central to your trip, such as a special occasion, scenic destination, or relaxing stay where you will spend time enjoying the outlook."}
-      }
+    "@type":"Article",
+    "headline":"What Is a Panoramic Room?",
+    "description":"Definition, features and booking advice for panoramic hotel rooms.",
+    "author":{"@type":"Organization","name":"PanoramicRoom.com"},
+    "publisher":{"@type":"Organization","name":"PanoramicRoom.com"},
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://panoramicroom.com/what-is-a-panoramic-room.html"}
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://panoramicroom.com/"},
+      {"@type":"ListItem","position":2,"name":"What Is a Panoramic Room","item":"https://panoramicroom.com/what-is-a-panoramic-room.html"}
     ]
   }
   </script>
@@ -92,146 +69,81 @@
 
 <header>
   <p class="kicker"><a href="/">panoramicroom.com</a></p>
-
   <h1>What Is a Panoramic Room?</h1>
-  <p class="sub">The real meaning of a panoramic hotel room — what it includes, what it doesn’t, and how to confirm the actual view before you book.</p>
+  <p class="sub">A panoramic room is a hotel room marketed for its wide, immersive view — not necessarily its size.</p>
 
   <figure>
     <img
       class="img"
       src="/hotel-view-singapore-fairmont-hotel.jpg"
-      alt="Panoramic hotel room view overlooking Singapore skyline through floor-to-ceiling windows"
+      alt="Panoramic hotel room overlooking city skyline through floor-to-ceiling windows"
+      width="1200"
+      height="800"
       loading="eager"
       fetchpriority="high"
     />
-    <figcaption>A true panoramic room frames the skyline or landscape as the focal point of the stay.</figcaption>
+    <figcaption>Panoramic rooms are designed around the view, often using floor-to-ceiling glass.</figcaption>
   </figure>
 </header>
 
 <main>
 
 <section class="card">
-  <h2 style="margin-top:0;">Panoramic room definition</h2>
-  <p>A panoramic room is a hotel room designed to maximise wide, immersive views. The term “panoramic” refers to the breadth and depth of the outlook — not necessarily the size of the room itself.</p>
-
-  <p>In practice, panoramic rooms are usually created through:</p>
-  <ul>
-    <li>Corner positioning for dual-angle visibility</li>
-    <li>Floor-to-ceiling or expanded glass panels</li>
-    <li>Higher floor placement to reduce obstructions</li>
-    <li>Room layouts designed around the view</li>
-  </ul>
-
-  <p><strong>Important:</strong> Panoramic describes the experience of the view — not the square footage.</p>
+  <h2 style="margin-top:0;">Panoramic room meaning</h2>
+  <p>The term <strong>panoramic room</strong> refers to a hotel room positioned or designed to maximise wide-angle visibility. This may include corner placement, expanded window spans, elevated floors, or unobstructed outlooks.</p>
+  <p>Unlike standard rooms, the defining feature is the visual experience rather than the physical dimensions.</p>
 </section>
 
 <section>
-  <h2>What makes a panoramic room different from a standard room?</h2>
+  <h2>Key characteristics of a panoramic hotel room</h2>
+  <ul>
+    <li>Large or wraparound windows</li>
+    <li>Corner layout with dual sightlines</li>
+    <li>Higher floor placement</li>
+    <li>Greater natural light</li>
+    <li>Room layout oriented toward the view</li>
+  </ul>
+</section>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Feature</th>
-        <th>Panoramic Room</th>
-        <th>Standard Room</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>View emphasis</td>
-        <td>Wide, immersive outlook</td>
-        <td>No guaranteed view</td>
-      </tr>
-      <tr>
-        <td>Window size</td>
-        <td>Often larger or wraparound</td>
-        <td>Standard window size</td>
-      </tr>
-      <tr>
-        <td>Floor placement</td>
-        <td>Often higher floors</td>
-        <td>Any floor</td>
-      </tr>
-      <tr>
-        <td>Pricing</td>
-        <td>Premium category</td>
-        <td>Base category</td>
-      </tr>
-    </tbody>
-  </table>
+<section>
+  <h2>How it differs from standard and ocean view rooms</h2>
+  <p>Panoramic describes view width and immersion. Ocean view simply confirms water visibility. A room can be panoramic without facing the ocean — for example, city skyline or mountain-facing rooms.</p>
 
-  <p class="kicker">Related comparison: <a href="/panoramic-room-vs-ocean-view.html">Panoramic Room vs Ocean View Room</a></p>
+  <p>Compare here: <a href="/panoramic-room-vs-ocean-view.html">Panoramic Room vs Ocean View Room</a></p>
 </section>
 
 <section>
   <h2>Why panoramic rooms cost more</h2>
-  <p>Hotels typically have limited inventory of rooms with true wide-angle positioning. Because these rooms are scarce and often deliver higher guest satisfaction, they are priced as premium inventory.</p>
+  <p>Hotels typically have limited panoramic inventory. Because these rooms offer enhanced guest satisfaction and stronger perceived value, they are priced at a premium.</p>
 
   <figure>
     <img
       class="img"
       src="/night-view-from-room.jpg"
-      alt="Night panoramic hotel room view with illuminated skyline seen through large windows"
+      alt="Night city skyline view from a panoramic hotel room"
+      width="1200"
+      height="800"
       loading="lazy"
-      decoding="async"
     />
-    <figcaption>Panoramic rooms often feel most dramatic at night when skyline lights create depth.</figcaption>
+    <figcaption>Night skyline views are often a major selling point of panoramic rooms.</figcaption>
   </figure>
-
-  <p>The price premium reflects both demand and scarcity.</p>
 </section>
 
 <section>
   <h2>Is a panoramic room worth it?</h2>
-
-  <p>A panoramic room is often worth paying extra for if:</p>
-  <ul>
-    <li>The destination is known for its scenery</li>
-    <li>You plan to spend time relaxing in the room</li>
-    <li>The view is central to a special occasion</li>
-    <li>Photography or ambience matters to you</li>
-  </ul>
-
-  <p>It may not be worth it if you’ll be out all day or if the panoramic label only refers to height rather than angle or window design.</p>
-
-  <figure>
-    <img
-      class="img"
-      src="/view-from-our-room-ocean.jpg"
-      alt="Wide ocean view from a hotel room balcony overlooking coastline"
-      loading="lazy"
-      decoding="async"
-    />
-    <figcaption>Some panoramic rooms face ocean, others city or mountains — the key is verifying the angle and openness.</figcaption>
-  </figure>
+  <p>A panoramic room is worth paying extra for if the scenery enhances your stay — romantic trips, scenic destinations, photography, or relaxation-focused holidays.</p>
+  <p>If you’ll rarely be in the room, the premium may not deliver meaningful value.</p>
 </section>
 
 <section class="card">
-  <h2 style="margin-top:0;">How to verify a panoramic room before booking</h2>
-  <p>Marketing images often show the best possible angle in ideal conditions. The safest way to confirm what you’re actually getting is to review real guest-submitted images of the exact room category.</p>
-
-  <a class="btn" href="https://viewfromtheroom.com/" target="_blank" rel="noopener">
-    See Real Hotel Room Views →
-  </a>
-
-  <p class="kicker" style="margin-top:10px;">
-    Also helpful: <a href="/best-hotel-room-views-guide.html">How to Choose the Best Hotel Room View</a>
-  </p>
-</section>
-
-<section>
-  <h2>Common misconceptions about panoramic rooms</h2>
-  <ul>
-    <li>Panoramic does not always mean ocean-facing.</li>
-    <li>Panoramic does not guarantee larger room size.</li>
-    <li>Higher floor does not automatically mean unobstructed view.</li>
-    <li>Corner rooms are often panoramic — but not always.</li>
-  </ul>
+  <h2 style="margin-top:0;">How to verify before booking</h2>
+  <p>Hotel marketing images may exaggerate perspective. The most reliable method is reviewing real guest-uploaded photos of the exact room category.</p>
+  <a class="btn" href="https://viewfromtheroom.com/" target="_blank" rel="noopener">See Real Hotel Room Views →</a>
 </section>
 
 <section>
   <h2>Final takeaway</h2>
-  <p>A panoramic room is about <strong>view immersion</strong> — width, light, and openness. It can dramatically improve your stay when the scenery matters. The key is confirming what the hotel means by “panoramic” before you pay the premium.</p>
+  <p>A panoramic room is about visual immersion — breadth, openness, and light. Always confirm the angle, height, and potential obstructions before paying the premium.</p>
 </section>
 
 </main>
