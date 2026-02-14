@@ -8,94 +8,81 @@
   <meta name="description" content="A practical guide to the hotel meaning of “panoramic room” — plus the fastest way to confirm the actual view before you book." />
   <link rel="canonical" href="https://panoramicroom.com/" />
 
+  <!-- Optional but recommended once you’re using a real OG image -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Panoramic Room: What It Means, How It Differs, and How to Verify the View" />
+  <meta property="og:description" content="A practical guide to the hotel meaning of “panoramic room” — plus the fastest way to confirm the actual view before you book." />
+  <meta property="og:url" content="https://panoramicroom.com/" />
+  <meta property="og:image" content="https://panoramicroom.com/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <style>
-    :root {
-      --max: 860px;
-      --fg:#111;
-      --muted:#555;
-      --bg:#fff;
-      --card:#f6f7f9;
-      --link:#0b57d0;
-      --border:#e5e7eb;
-      --btn:#111;
-      --btnText:#fff;
-      --btnHover:#1f2937;
-    }
-
-    body {
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      color:var(--fg);
-      background:var(--bg);
-      line-height:1.55;
-    }
-
-    header, main, footer {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 20px;
-    }
-
+    :root { --max: 860px; --fg:#111; --muted:#555; --bg:#fff; --card:#f6f7f9; --link:#0b57d0; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); line-height:1.55; }
+    header, main, footer { max-width: var(--max); margin: 0 auto; padding: 20px; }
     header { padding-top: 34px; }
-
     h1 { font-size: 2rem; line-height:1.15; margin: 0 0 12px; }
     h2 { margin-top: 34px; scroll-margin-top: 14px; }
-
     .sub { color: var(--muted); margin: 0 0 18px; }
     .card { background: var(--card); padding: 16px; border-radius: 14px; }
-
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
-
     table { width:100%; border-collapse: collapse; margin-top: 12px; }
     th, td { text-align:left; padding: 10px; border-bottom: 1px solid #ddd; vertical-align: top; }
-
     ul { padding-left: 18px; }
-
     .kicker { font-size:.95rem; color:var(--muted); }
 
     /* Jump links / TOC */
     .toc { margin: 18px 0 0; }
-    .toc a {
-      display:inline-block;
-      margin: 6px 10px 0 0;
-      padding: 8px 10px;
-      background:#eef2ff;
-      border-radius: 10px;
-    }
-
-    /* CTA button */
-    .cta {
-      display:inline-block;
-      margin-top: 12px;
-      padding: 12px 14px;
-      border-radius: 12px;
-      background: var(--btn);
-      color: var(--btnText);
-      font-weight: 700;
-      text-decoration: none;
-    }
-    .cta:hover {
-      background: var(--btnHover);
-      text-decoration: none;
-    }
-    .cta:focus-visible {
-      outline: 3px solid #93c5fd;
-      outline-offset: 3px;
-    }
+    .toc a { display:inline-block; margin: 6px 10px 0 0; padding: 8px 10px; background:#eef2ff; border-radius: 10px; }
 
     /* Explore section styling (aligned with rest of page) */
     .explore-list { display: grid; gap: 12px; margin-top: 12px; }
-    .explore-item {
-      display:block;
-      padding: 14px;
-      border-radius: 14px;
-      background: #fff;
-      border: 1px solid var(--border);
-    }
-    .explore-item:hover { text-decoration: none; border-color: #cbd5e1; }
-    .explore-title { font-weight: 700; margin-bottom: 4px; color: var(--fg); }
+    .explore-item { display:block; padding: 14px; border-radius: 14px; background: #fff; border: 1px solid #e5e7eb; }
+    .explore-title { font-weight: 700; margin-bottom: 4px; }
     .explore-desc { color: var(--muted); }
+
+    /* Buttons */
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap: 8px;
+      margin-top: 10px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: #111;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration:none; opacity: .92; }
+
+    /* Images */
+    figure { margin: 0; }
+    .hero-figure { margin-top: 16px; }
+    .img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+      background: #fff;
+    }
+    figcaption {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .img-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    @media (min-width: 740px) {
+      .img-grid { grid-template-columns: 1fr 1fr; }
+    }
   </style>
 </head>
 
@@ -105,6 +92,19 @@
     <h1>Panoramic Room: What It Means, How It Differs, and How to Verify the View</h1>
     <p class="sub">A practical guide to the hotel meaning of “panoramic room” — plus the fastest way to confirm the actual view before you book.</p>
 
+    <!-- ✅ INSERT IMAGE #1 (HERO) RIGHT HERE -->
+    <figure class="hero-figure">
+      <img
+        class="img"
+        src="/Panoramic-View-New-York-Hotel.jpg"
+        alt="Example of a panoramic hotel room view with wide city skyline windows"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <figcaption>Example panoramic view: wide window span, skyline visibility, and a room layout designed around the view.</figcaption>
+    </figure>
+
+    <!-- Optional: jump links (highly recommended) -->
     <nav class="toc" aria-label="Page sections">
       <a href="#what-is-a-panoramic-room">What it means</a>
       <a href="#why-its-confusing">Why it’s confusing</a>
@@ -118,6 +118,7 @@
   </header>
 
   <main>
+
     <section class="card" id="what-is-a-panoramic-room">
       <h2 style="margin-top:0;">What is a panoramic room?</h2>
       <p>A panoramic room is a hotel room promoted for a wide, expansive view of the surrounding scenery—city, ocean, harbour, mountains, landmarks—often enabled by large windows, corner layouts, or higher floors.</p>
@@ -133,6 +134,18 @@
     <section id="panoramic-vs-standard">
       <h2>Panoramic room vs standard room</h2>
       <p>A panoramic room differs from a standard room primarily in the view. Size and layout may or may not change.</p>
+
+      <!-- ✅ INSERT IMAGE #2 (CONTEXT IMAGE) RIGHT HERE -->
+      <figure style="margin-top:12px;">
+        <img
+          class="img"
+          src="/panoramic-ocean-view-room.jpg"
+          alt="Panoramic ocean view room example showing wide glass doors and balcony"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>Panoramic can mean “wide angle” (more glass / better placement) rather than a bigger room.</figcaption>
+      </figure>
 
       <table>
         <thead>
@@ -183,14 +196,37 @@
       <p>Marketing photos can be beautiful—but they don’t always show the real angle, obstructions, height, or how the view looks at night.</p>
       <p><strong>Best practice:</strong> check real guest-submitted photos of the specific room category.</p>
 
-      <!-- Button only (removed the duplicate text link above it) -->
-      <a class="cta" href="https://viewfromtheroom.com/" target="_blank" rel="noopener noreferrer">
+      <!-- ✅ BUTTON (replace the duplicate text link + button with ONE clean button) -->
+      <a class="btn" href="https://viewfromtheroom.com/" target="_blank" rel="noopener">
         See real panoramic room views on ViewFromTheRoom.com →
       </a>
 
-      <p class="sub" style="margin-top:10px;">
-        ViewFromTheRoom is a UGC platform where travellers share the actual view from their hotel room—so you can “see the view before you book”.
-      </p>
+      <p class="sub" style="margin-top:10px;">ViewFromTheRoom is a UGC platform where travellers share the actual view from their hotel room—so you can “see the view before you book”.</p>
+
+      <!-- ✅ INSERT IMAGES #3 + #4 (PROOF / VARIETY) RIGHT HERE -->
+      <div class="img-grid" aria-label="Panoramic room examples">
+        <figure>
+          <img
+            class="img"
+            src="/Oceanview-Room.jpg"
+            alt="Ocean view hotel room example showing beach and water from the room"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>Example: a “view room” that’s clearly ocean-facing — easier to verify if you see real guest angles.</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            class="img"
+            src="/Glasslodge Iceland Panoramic Room.jpg"
+            alt="Panoramic glass lodge room example with wide landscape view through full glass walls"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>Example: panoramic can also mean “surrounding landscape visibility” (not just ocean/city).</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section id="faq">
@@ -240,15 +276,13 @@
         </a>
       </div>
     </section>
+
   </main>
 
   <footer>
     <p class="kicker"><strong>Last updated:</strong> 2026-02-06</p>
     <p class="kicker"><a href="#top">Back to top ↑</a></p>
-    <p class="kicker">
-      <a href="https://viewfromtheroom.com/" target="_blank" rel="noopener noreferrer">ViewFromTheRoom.com</a>
-      — Real panoramic room views
-    </p>
+    <p class="kicker"><a href="https://viewfromtheroom.com/" target="_blank" rel="noopener">ViewFromTheRoom.com</a> — Real panoramic room views</p>
   </footer>
 </body>
 </html>
