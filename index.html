@@ -21,26 +21,33 @@
 
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
 
-  <style>
-    :root { --max: 860px; --fg: #111; --muted:#555; --bg:#fff; --card:#f6f7f9; --link:#0b57d0; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); line-height:1.55; }
-    header, main, footer { max-width: var(--max); margin: 0 auto; padding: 20px; }
-    header { padding-top: 34px; }
-    h1 { font-size: 2rem; line-height:1.15; margin: 0 0 12px; }
-    h2 { margin-top: 34px; }
-    .sub { color: var(--muted); margin: 0 0 18px; }
-    .card { background: var(--card); padding: 16px; border-radius: 14px; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .cta { display:inline-block; margin-top: 12px; padding: 12px 14px; border-radius: 12px; background: #111; color:#fff; }
-    .cta:hover { text-decoration:none; opacity: .92; }
-    table { width:100%; border-collapse: collapse; margin-top: 12px; }
-    th, td { text-align:left; padding: 10px; border-bottom: 1px solid #ddd; vertical-align: top; }
-    ul { padding-left: 18px; }
-    .kicker { font-size:.95rem; color:var(--muted); }
-    .faq h3 { margin-bottom: 6px; }
-    .footer-links a { margin-right: 12px; }
-  </style>
+<style>
+  :root { --max: 860px; --fg: #111; --muted:#555; --bg:#fff; --card:#f6f7f9; --link:#0b57d0; }
+  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); line-height:1.55; }
+  header, main, footer { max-width: var(--max); margin: 0 auto; padding: 20px; }
+  header { padding-top: 34px; }
+  h1 { font-size: 2rem; line-height:1.15; margin: 0 0 12px; }
+  h2 { margin-top: 34px; }
+  .sub { color: var(--muted); margin: 0 0 18px; }
+  .card { background: var(--card); padding: 16px; border-radius: 14px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .cta { display:inline-block; margin-top: 12px; padding: 12px 14px; border-radius: 12px; background: #111; color:#fff; }
+  .cta:hover { text-decoration:none; opacity: .92; }
+  table { width:100%; border-collapse: collapse; margin-top: 12px; }
+  th, td { text-align:left; padding: 10px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  ul { padding-left: 18px; }
+  .kicker { font-size:.95rem; color:var(--muted); }
+  .faq h3 { margin-bottom: 6px; }
+  .footer-links a { margin-right: 12px; }
+
+  /* Explore section */
+  .explore-list { display: grid; gap: 12px; margin-top: 12px; }
+  .explore-item { display:block; padding: 14px; border-radius: 12px; background: #fff; border: 1px solid #e6e6e6; }
+  .explore-title { font-weight: 700; color: var(--fg); margin-bottom: 4px; }
+  .explore-desc { color: var(--muted); }
+</style>
+
 
   <!-- FAQ + WebPage schema -->
   <script type="application/ld+json">
@@ -173,20 +180,28 @@
       </ul>
     </section>
 
-  </main>
-
-  <section class="card">
+<section class="card">
   <h2>Explore More About Hotel Room Views</h2>
 
-  <p><a href="/what-is-a-panoramic-room.html"><strong>What Is a Panoramic Room?</strong></a><br>
-  A deeper breakdown of the meaning, layout differences, and common hotel marketing variations.</p>
+  <div class="explore-list">
+    <a class="explore-item" href="/what-is-a-panoramic-room.html">
+      <div class="explore-title">What Is a Panoramic Room?</div>
+      <div class="explore-desc">A deeper breakdown of the meaning, layout differences, and common hotel marketing variations.</div>
+    </a>
 
-  <p><a href="/panoramic-room-vs-ocean-view.html"><strong>Panoramic Room vs Ocean View</strong></a><br>
-  Understand the real difference between these two room categories before paying extra.</p>
+    <a class="explore-item" href="/panoramic-room-vs-ocean-view.html">
+      <div class="explore-title">Panoramic Room vs Ocean View</div>
+      <div class="explore-desc">Understand the real difference between these two room categories before paying extra.</div>
+    </a>
 
-  <p><a href="/best-hotel-room-views-guide.html"><strong>Best Hotel Room Views: Complete Guide</strong></a><br>
-  Learn how to verify room views, avoid disappointment, and book smarter.</p>
+    <a class="explore-item" href="/best-hotel-room-views-guide.html">
+      <div class="explore-title">Best Hotel Room Views: Complete Guide</div>
+      <div class="explore-desc">Learn how to verify room views, avoid disappointment, and book smarter.</div>
+    </a>
+  </div>
 </section>
+    
+  </main>
 
   <footer>
     <p class="kicker">Last updated: 2026-02-06</p>
